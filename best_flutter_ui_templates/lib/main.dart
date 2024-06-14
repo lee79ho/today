@@ -5,8 +5,15 @@ import 'package:flutter/services.dart';
 import 'navigation_home_screen.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
+import 'dart:developer';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  debugPrint("main.....");
+  log("main ... message here");
+
+
   await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown

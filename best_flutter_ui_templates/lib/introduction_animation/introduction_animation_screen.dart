@@ -36,6 +36,9 @@ class _IntroductionAnimationScreenState
   @override
   Widget build(BuildContext context) {
     print(_animationController?.value);
+
+
+    debugPrint("_IntroductionAnimationScreenState.....");
     return Scaffold(
       backgroundColor: Color(0xffF7EBE1),
       body: ClipRect(

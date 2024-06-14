@@ -41,6 +41,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("_FitnessAppHomeScreenState.....");
     return Container(
       color: FitnessAppTheme.background,
       child: Scaffold(

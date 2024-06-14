@@ -6,6 +6,8 @@ import 'package:best_flutter_ui_templates/help_screen.dart';
 import 'package:best_flutter_ui_templates/home_screen.dart';
 import 'package:best_flutter_ui_templates/invite_friend_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
+import 'dart:developer';
 
 class NavigationHomeScreen extends StatefulWidget {
   @override
@@ -25,6 +27,12 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+
+    debugPrint("NavigationHomeScreen .....");
+    log("NavigationHomeScreen ... message here");
+
+
+
     return Container(
       color: AppTheme.white,
       child: SafeArea(
@@ -48,8 +56,18 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
   }
 
   void changeIndex(DrawerIndex drawerIndexdata) {
+
+    debugPrint("changeIndex .....");
+    log("changeIndex ... message here");
+
+
+
     if (drawerIndex != drawerIndexdata) {
       drawerIndex = drawerIndexdata;
+      debugPrint("movieTitle.....");
+      log("your message here");
+      debugPrint("");
+      debugPrint('movieTitle: $drawerIndex');
       switch (drawerIndex) {
         case DrawerIndex.HOME:
           setState(() {

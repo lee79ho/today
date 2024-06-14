@@ -15,6 +15,7 @@ class _DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("_DesignCourseHomeScreenState.....");
     return Container(
       color: DesignCourseAppTheme.nearlyWhite,
       child: Scaffold(
